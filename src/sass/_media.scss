@@ -8,6 +8,20 @@
     .container {
         max-width: 695px;
     }
+    .title {
+        &_left {
+            text-align: center;
+            width: 100%;
+        }
+    }
+    .consultation {
+        &__descr {
+            text-align: center;
+        }
+    }
+    .feed-form {
+        margin: 36px auto 0 auto;
+    }
 }
 
 @media (max-width: 575px) {
@@ -44,6 +58,18 @@
             margin-top: 50px;
         }
     }
+    .consultation {
+        &__descr {
+            font-size: 19px;
+            line-height: 28px;
+        }
+    }
+    .title {
+        &_left {
+            font-size: 33px;
+            line-height: 46px;
+        }
+    }
 }
 
 @media (max-width: 425px) {
@@ -77,6 +103,10 @@
             margin-top: 10px;
             height: 47px;
         }
+        &_submit {
+            width: 100%;
+            height: 58px;
+        }
     }
     .promo {
         &__wrapper {
@@ -107,6 +137,20 @@
                 width: 40px;
                 margin-bottom: 10px;
             }
+        }
+    }
+    .consultation {
+        min-height: 542px;
+        padding: 70px 0 60px 0;
+        &__descr {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+    .title {
+        &_left {
+            font-size: 28px;
+            line-height: 29px;
         }
     }
 }
