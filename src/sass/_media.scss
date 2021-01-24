@@ -22,6 +22,11 @@
     .feed-form {
         margin: 36px auto 0 auto;
     }
+    .carousel {
+        .prev, .next {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -152,5 +157,8 @@
             font-size: 28px;
             line-height: 29px;
         }
+    }
+    .carousel {
+        padding: 70px 0 70px 0;
     }
 }
