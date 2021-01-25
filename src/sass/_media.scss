@@ -96,6 +96,13 @@
             text-align: center;
         }
     }
+    .footer {
+        &__info {
+            max-width: 350px;
+            width: 100%;
+            padding: 30px 50px 30px 50px;
+        }
+    }
 }
 
 @media (max-width: 425px) {
