@@ -75,6 +75,15 @@
             line-height: 46px;
         }
     }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+
+        }
+        &__tab {
+            margin: 5px auto;
+        }
+    }
 }
 
 @media (max-width: 425px) {
@@ -111,6 +120,12 @@
         &_submit {
             width: 100%;
             height: 58px;
+        }
+        &_mini {
+            width: 135px;
+            height: 44px;
+            font-size: 14px;
+            margin-top: 0;
         }
     }
     .promo {
