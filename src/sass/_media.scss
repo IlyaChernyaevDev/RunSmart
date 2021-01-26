@@ -103,6 +103,17 @@
             padding: 30px 50px 30px 50px;
         }
     }
+    .modal {
+        width: 298px;
+        padding: 30px 20px 30px 20px;
+        &__close {
+            top: -39px;
+            right: -2px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+    }
 }
 
 @media (max-width: 425px) {
