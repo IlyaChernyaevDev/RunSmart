@@ -114,6 +114,16 @@
             font-size: 16px;
         }
     }
+    .feed-form {
+        margin-top: 25px;
+        input {
+            height: 48px;
+            margin-bottom: 10px;
+        }
+    }
+    label.error {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 425px) {
