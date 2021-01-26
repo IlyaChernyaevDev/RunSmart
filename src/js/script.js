@@ -33,6 +33,8 @@ $(document).ready(function() {
       });
     });
 
+
+    //Функция валидации инпутов 
     function validateFroms(form) {
       $(form).validate({
         rules: {
@@ -66,11 +68,28 @@ $(document).ready(function() {
 
     $('input[name=phone').mask("+7 (999) 999-9999");
 
+    ////Скрипт имитации отправки формы
     $('form').submit(function(e) {
       e.preventDefault();
       $('#consultation, #order').fadeOut();
       $('.overlay, #thanks').fadeIn('slow');
       $('form').trigger('reset');
+    });
+
+    //Скрипт для появления кнопки "Вверх"
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 1600) {
+        $('.pageup').fadeIn();
+      } else {
+        $('.pageup').fadeOut();
+      }
+    });
+
+    //Скрипт для плавного скролла
+    $("a[href^='#up']").click(function(){
+      const _href = $(this).attr("href");
+      $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+      return false;
     });
   });
 
