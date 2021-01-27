@@ -10,7 +10,7 @@ $(document).ready(function() {
         $(this).on('click', function(e) {
           e.preventDefault();
           $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-          $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+          $('.catalog-item__list-wrapper').eq(i).toggleClass('catalog-item__list-wrapper_active');
         });
       });
     }
@@ -112,3 +112,5 @@ document.querySelector('.prev').addEventListener('click', function () {
 document.querySelector('.next').addEventListener('click', function () {
   slider.goTo('next');
 });
+
+new WOW().init();

@@ -35,4 +35,9 @@
             text-decoration: underline;
         }
     }
+    &__img{
+        &_animated {
+            animation: heartbeat 2s ease infinite;
+        }
+    }
 }
