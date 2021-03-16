@@ -1,0 +1,43 @@
+.advantage {
+    padding: 73px 0 65px 0;
+    background: #F6F6F6;
+    &__container {
+        margin: 65px auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__block {
+        margin: 10px auto 0 auto;
+        max-width: 280px;
+        width: 100%;
+        text-align: center;
+    }
+    &__title {
+        margin: 35px auto 0 auto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        color: #0D0D0D;
+    }
+    &__text {
+        margin: 20px auto 0 auto;
+        width: 82%;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #0D0D0D;
+        span {
+            color: $main-color;
+            text-decoration: underline;
+        }
+    }
+    &__img{
+        &_animated {
+            animation: heartbeat 2s ease infinite;
+        }
+    }
+}
